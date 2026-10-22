@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zv_bg">#0A0F0A</color>
+    <style name="ZombieTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/zv_bg</item>
+        <item name="android:statusBarColor">@color/zv_bg</item>
+        <item name="android:navigationBarColor">@color/zv_bg</item>
+        <item name="android:colorAccent">#7CC62B</item>
+    </style>
+</resources>

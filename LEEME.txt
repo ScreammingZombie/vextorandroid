@@ -1,0 +1,22 @@
+ZOMBIE VECTORIZER  -  By P.V.M.
+================================
+App Android (minSdk 29) que convierte imágenes a vector, todo sin internet.
+
+COMPILAR (igual que la Music Library)
+  - GitHub Actions: subí esta carpeta a un repositorio; .github/workflows/build.yml
+    compila y deja el APK como "ZombieVectorizer-apk" en la pestaña Actions.
+  - Android Studio: abrir la carpeta, Build > Build APK.
+  La firma es fija (app/zv-debug.keystore), así que las versiones nuevas se instalan encima.
+
+FUENTES
+  Copiá tus .ttf en app/src/main/assets/fonts/ (Dark_Zombie.ttf y la de Scary Zombie).
+  La app usa el primer archivo cuyo nombre contenga "dark" para el título y
+  "scary" para los botones. Sin ellos usa la fuente del sistema.
+
+MODOS
+  RAPIDO:          cuantización de color + trazado + curvas Bézier.
+  MAXIMA CALIDAD:  agranda (bicúbico, hasta 3x), limpia ruido y artefactos JPEG,
+                   usa más colores y ajusta las curvas con más precisión.
+
+FORMATOS: SVG, PDF (vectorial), PNG normal (1600 px) y PNG alta resolución (hasta 4096 px).
+Se guardan en Descargas/Zombie Vectorizer. El historial guarda las últimas 20 conversiones.

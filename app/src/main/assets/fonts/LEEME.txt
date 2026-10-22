@@ -1,0 +1,5 @@
+Copiá acá tus fuentes (.ttf) de las otras apps:
+  - Dark Zombie  (Dark_Zombie.ttf)  -> nombre de la app
+  - Scary Zombie                    -> botones
+La app busca en esta carpeta el primer archivo cuyo nombre contenga "dark" y el primero que contenga "scary".
+Si no los encuentra usa la fuente del sistema.
